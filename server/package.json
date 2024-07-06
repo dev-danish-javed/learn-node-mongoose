@@ -1,0 +1,26 @@
+{
+  "name": "server-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start" : "npm run lint & nodemon app.js",
+    "lint" : "./node_modules/.bin/eslint **/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danish Javed",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0"
+  }
+}

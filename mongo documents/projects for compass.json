@@ -1,0 +1,30 @@
+[
+    {
+        "_id": { "$oid": "5ba44f206bbd5f0cc0541ae0" },
+        "isActive": true,
+        "name": "Nebuchadnezzar",
+        "description": "Express API project",
+        "__v": { "$numberInt": "0" }
+    },
+    {
+        "_id": { "$oid": "5ba44f4b6bbd5f0cc0541ae1" },
+        "isActive": true,
+        "name": "Trinity",
+        "description": "User experience research and developemnt project",
+        "__v": { "$numberInt": "0" }
+    },
+    {
+        "_id": { "$oid": "5ba44f716bbd5f0cc0541ae2" },
+        "isActive": true,
+        "name": "Matrix",
+        "description": "Vue.js main web application project",
+        "__v": { "$numberInt": "0" }
+    },
+    {
+        "_id": { "$oid": "5ba44f8f6bbd5f0cc0541ae3" },
+        "isActive": true,
+        "name": "Morpheus",
+        "description": "NoSQL database team development",
+        "__v": { "$numberInt": "0" }
+    }
+]

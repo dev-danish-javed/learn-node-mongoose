@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "e614b83c-4543-437d-82d8-10233fa3727b",
+		"name": "Mongoose App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11480284"
+	},
+	"item": [
+		{
+			"name": "Standup",
+			"item": [
+				{
+					"name": "Add note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_teamMemberId\": \"5b9eddd764f634289ca895eb\",\r\n    \"teamMember\":\"Gayatri\",\r\n    \"project\":\"Paymentus Core\",\r\n    \"workYesterday\":\"ROTP huperlink\",\r\n    \"workToday\":\"AD hyperlinks\",\r\n    \"impediment\":\"Somthing else\",\r\n    \"createdOn\": \"2024-10-31T22:30:03.002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/standup",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All notes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/standup",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Notes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teamMember\":\"Danish\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/standup/find",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search One Note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teamMember\":\"Danish\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/standup/findOne",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup",
+								"findOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find note by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/standup/6688d1a81a9bc92d88c814ae",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup",
+								"6688d1a81a9bc92d88c814ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find note by IteamMemberId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/standup/6688d1a81a9bc92d88c814ae",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup",
+								"6688d1a81a9bc92d88c814ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update One",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prev\":{\r\n        \"teamMember\":\"Danish\"\r\n    },\r\n    \"update\":{\r\n        \"teamMember\":\"Danish Javed\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/standup",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Many",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"update\":{\r\n        \"teamMember\":\"Danish Javed\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/standup/5b9ecdaf89bbd233f0b680cf",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup",
+								"5b9ecdaf89bbd233f0b680cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByIdAndUpdate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"update\":{\r\n        \"teamMember\":\"Danish Javed\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/standup/5b9ecdaf89bbd233f0b680cf",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup",
+								"5b9ecdaf89bbd233f0b680cf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get All notes for team member",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/standup",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"standup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
